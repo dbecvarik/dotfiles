@@ -1,0 +1,13 @@
+#!/bin/emacs --script
+
+;; script which tangles org dotfiles inside proper locations
+
+(require 'org)
+(setq dotfiles '("gitconfig"))
+
+(require 'cl)
+(cl-loop for file in dotfiles
+  do (print file)
+  (print (concat "Processing: " file ".org"))
+  (org-babel-tangle-file (concat file ".org") (expand-file-name (concat "~/." file))))
+

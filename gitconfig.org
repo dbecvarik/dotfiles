@@ -1,0 +1,8 @@
+* introduce myself
+First i need to setup my name and email.
+
+#+BEGIN_SRC :tangle yes
+[user]
+	email = dbecvari@redhat.com
+	name = David Becvarik
+#+END_SRC
