@@ -7,7 +7,6 @@
 
 (require 'cl)
 (cl-loop for file in dotfiles
-  do (print file)
-  (print (concat "Processing: " file ".org"))
+  do (print (concat "Processing: " file ".org"))
   (org-babel-tangle-file (concat file ".org") (expand-file-name (concat "~/." file))))
 
