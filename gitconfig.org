@@ -5,4 +5,5 @@ First i need to setup my name and email.
 [user]
 	email = dbecvari@redhat.com
 	name = David Becvarik
+        signingkey = ldj@l-d-j.org
 #+END_SRC
